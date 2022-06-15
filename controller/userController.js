@@ -206,7 +206,7 @@ export default class UserController {
 
     async getAll(req, res) {
         const { page } = req.query;
-        const limit = 3;
+        const limit = 10;
 
         const startIndex = (page - 1) * limit;
         const endIndex = page * limit;
